@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Contador - Counter</title>
+  </head>
+  <body>
+    <section id="selector">
+      <div class="selector-area">
+        <h1>Contador</h1>
+        <h3>Informe uma data</h3>
+        <input type="date" id="dateinput" />
+        <input
+          type="button"
+          value="Iniciar Contagem"
+          onclick="screenChange()"
+        />
+      </div>
+    </section>
+    <main id="counter">
+      <header>
+        <h1>Contador</h1>
+        <input type="button" value="Reiniciar" onclick="resetChange()" />
+      </header>
+      <div class="countermain">
+        <h2 id="faltam">Faltam:</h2>
+        <div class="contador">
+          <div class="csection dias">
+            <h1 id="days">0</h1>
+            <label>Dias</label>
+          </div>
+          <div class="csection horas">
+            <h1 id="hours">0</h1>
+            <label>Horas</label>
+          </div>
+          <div class="csection minutos">
+            <h1 id="minutes">0</h1>
+            <label>Minutos</label>
+          </div>
+          <div class="csection segundos">
+            <h1 id="seconds">0</h1>
+            <label>Segundos</label>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
